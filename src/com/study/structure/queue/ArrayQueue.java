@@ -1,7 +1,7 @@
-package com.study.queue;
+package com.study.structure.queue;
 
 
-import com.study.array.Array;
+import com.study.structure.array.Array;
 
 public class ArrayQueue<E> implements Queue<E> {
 

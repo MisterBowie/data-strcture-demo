@@ -1,6 +1,6 @@
-package com.study.stack;
+package com.study.structure.stack;
 
-import com.study.linklist.LinkList;
+import com.study.structure.linklist.LinkList;
 
 /**
  * 用链表实现的栈

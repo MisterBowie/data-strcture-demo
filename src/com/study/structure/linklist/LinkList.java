@@ -1,4 +1,4 @@
-package com.study.linklist;
+package com.study.structure.linklist;
 
 public class LinkList<E> {
 

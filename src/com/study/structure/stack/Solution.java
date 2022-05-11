@@ -1,4 +1,4 @@
-package com.study.stack;
+package com.study.structure.stack;
 
 import java.util.Stack;
 

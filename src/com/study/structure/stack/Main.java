@@ -1,8 +1,8 @@
-package com.study.stack;
+package com.study.structure.stack;
 
-import com.study.queue.ArrayQueue;
-import com.study.queue.LoopQueue;
-import com.study.queue.Queue;
+import com.study.structure.queue.ArrayQueue;
+import com.study.structure.queue.LoopQueue;
+import com.study.structure.queue.Queue;
 
 import java.util.Random;
 

@@ -1,6 +1,6 @@
-package com.study.stack;
+package com.study.structure.stack;
 
-import com.study.array.Array;
+import com.study.structure.array.Array;
 
 
 public class ArrayStack<E> implements Stack<E> {

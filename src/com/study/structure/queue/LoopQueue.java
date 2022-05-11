@@ -1,4 +1,4 @@
-package com.study.queue;
+package com.study.structure.queue;
 
 /**
  * 循环队列

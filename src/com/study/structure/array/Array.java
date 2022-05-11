@@ -1,4 +1,4 @@
-package com.study.array;
+package com.study.structure.array;
 
 public class Array<E> {
     private E[] data;
