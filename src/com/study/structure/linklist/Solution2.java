@@ -6,7 +6,7 @@ package com.study.structure.linklist;
 public class Solution2 {
     public ListNode removeElements(ListNode head, int val) {
         ListNode dummyNode = new ListNode(-1);
-        dummyNode.next = head;
+        dummyNode.ne = head;
         ListNode prev = dummyNode;
         while (prev.next != null) {
             if (prev.next.val == val) {
