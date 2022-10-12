@@ -1,6 +1,7 @@
 package com.study.utils;
 
 import com.algorithm.sort.MergeSort;
+import com.algorithm.sort.QuickSort;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -23,6 +24,8 @@ public class SortingHelper {
         long startTime = System.nanoTime();
         if (sortname.equals("MergeSort"))
             MergeSort.sort(arr);
+        if (sortname.equals("QuickSort"))
+            QuickSort.sort(arr);
 //        else if(sortname.equals("InsertionSort"))
 //            InsertionSort.sort(arr);
 //        else if(sortname.equals("InsertionSort2"))
@@ -32,7 +35,7 @@ public class SortingHelper {
         double time = (endTime - startTime) / 1000000000.0;
 
         if (!SortingHelper.isSorted(arr)) {
-            System.out.println(Arrays.stream(arr).map(String::valueOf).collect(Collectors.joining(",")));
+            System.out.println("排序结果"+Arrays.stream(arr).map(String::valueOf).collect(Collectors.joining(",")));
             throw new RuntimeException(sortname + " failed");
         }
         System.out.println(String.format("%s , n = %d : %f s", sortname, arr.length, time));
