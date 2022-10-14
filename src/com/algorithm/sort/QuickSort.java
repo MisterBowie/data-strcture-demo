@@ -3,10 +3,13 @@ package com.algorithm.sort;
 import com.study.utils.ArrayGenerator;
 import com.study.utils.SortingHelper;
 
+import java.util.Random;
+
 /**
  * 快速排序
  */
 public class QuickSort {
+    private static Random random = new Random();
 
     private QuickSort() {
     }
@@ -28,6 +31,9 @@ public class QuickSort {
      * @return
      */
     private static <E extends Comparable<E>> int partition(E[] arr, int l, int r) {
+        // p的范围为[l-r]
+        int p = random.nextInt(r - l) + l;
+        swap(arr, l, p);
         int j = l;
         for (int i = l; i <= r; i++) {
             if (arr[l].compareTo(arr[i]) > 0) {
