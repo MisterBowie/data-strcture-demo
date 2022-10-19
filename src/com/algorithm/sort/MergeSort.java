@@ -24,7 +24,7 @@ public class MergeSort {
         merge(data, l, mid, r, temp);
     }
 
-        public static <E extends Comparable<E>> void merge(E[] data, int l, int mid, int r, E[] temp) {
+    public static <E extends Comparable<E>> void merge(E[] data, int l, int mid, int r, E[] temp) {
         System.arraycopy(data, l, temp, l, r - l + 1);
         int j = mid + 1;
         int k = l;
@@ -44,6 +44,7 @@ public class MergeSort {
             }
         }
     }
+
     public static void main(String[] args) {
         int n = 5000000;
         Integer[] integers = ArrayGenerator.generateRandomArray(n, n);
