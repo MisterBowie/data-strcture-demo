@@ -2,6 +2,9 @@ package com.algorithm.search;
 
 import com.study.utils.ArrayGenerator;
 
+/**
+ * 二分查找法
+ */
 public class BinarySearch {
     private BinarySearch() {
     }
