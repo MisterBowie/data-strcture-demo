@@ -1,4 +1,4 @@
-package com.study.structure.BST;
+package com.algorithm.search.bst;
 
 
 /**
