@@ -3,7 +3,7 @@
 ### 二叉树
 
 - [x]  遍历
-  - [x] [前序遍历](https://github.com/git/git/blob/master/README#L18)
+  - [x] [前序遍历](https://github.com/MisterBowie/data-strcture-demo/blob/fbf32783e4eba7bba278957069025a372e8155ee/src/com/algorithm/search/bst/BST.java#L77)
   - [x] 中序遍历
   - [x] 后序遍历
 
