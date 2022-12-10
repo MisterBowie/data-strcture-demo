@@ -60,6 +60,7 @@ public class BST<E extends Comparable> {
     public boolean contains(E e) {
         return contains(root, e);
     }
+
     public boolean contains(Node node, E e) {
         if (node == null) {
             return false;
@@ -74,43 +75,49 @@ public class BST<E extends Comparable> {
     }
 
     //前序遍历
-    public void preOrder(){
+    public void preOrder() {
         preOrder(root);
     }
 
-    private void preOrder(Node node){
-        if (node == null){
+    private void preOrder(Node node) {
+        if (node == null) {
             return;
         }
         System.out.println(node.e);
         preOrder(node.left);
         preOrder(node.right);
     }
+
     //中序遍历特点： 可以让数据按照顺序排序
-    public void inOrder(){
+    public void inOrder() {
         inOrder(root);
     }
 
-    private void inOrder(Node node){
-        if (node == null){
+    private void inOrder(Node node) {
+        if (node == null) {
             return;
         }
         inOrder(node.left);
         System.out.println(node.e);
         inOrder(node.right);
     }
-    public void traverse(){
+
+    /**
+     * 后序遍历
+     */
+    public void traverse() {
         traverse(root);
     }
 
-    private void traverse(Node node){
-        if (node == null){
+    private void traverse(Node node) {
+        if (node == null) {
             return;
         }
         traverse(node.left);
         traverse(node.right);
         System.out.println(node.e);
     }
+
     @Override
     public String toString() {
         return super.toString();
