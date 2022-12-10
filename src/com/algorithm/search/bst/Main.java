@@ -7,11 +7,9 @@ public class Main {
         for (int num : nums) {
             bst.add(num);
         }
-        System.out.println("前序遍历");
-        bst.preOrder();
-        System.out.println("中序遍历");
-        bst.inOrder();
-        System.out.println("后序遍历");
-        bst.traverse();
+        System.out.println("最小值");
+        System.out.println(bst.miniNum().e);
+        System.out.println("最大值");
+        System.out.println(bst.maxNum().e);
     }
 }

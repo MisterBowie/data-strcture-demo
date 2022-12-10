@@ -118,6 +118,38 @@ public class BST<E extends Comparable> {
         System.out.println(node.e);
     }
 
+    /**
+     * 查找最小值
+     *
+     * @return
+     */
+    public Node miniNum() {
+        return miniNum(root);
+    }
+
+    private Node miniNum(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+        return miniNum(node.left);
+    }
+
+    /**
+     * 查找最小值
+     *
+     * @return
+     */
+    public Node maxNum() {
+        return maxNum(root);
+    }
+
+    private Node maxNum(Node node) {
+        if (node.right == null) {
+            return node;
+        }
+        return maxNum(node.right);
+    }
+
     @Override
     public String toString() {
         return super.toString();
