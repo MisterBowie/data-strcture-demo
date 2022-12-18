@@ -135,7 +135,7 @@ public class BST<E extends Comparable> {
     }
 
     /**
-     * 查找最小值
+     * 查找最大值
      *
      * @return
      */
@@ -149,6 +149,7 @@ public class BST<E extends Comparable> {
         }
         return maxNum(node.right);
     }
+
 
     @Override
     public String toString() {
